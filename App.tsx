@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { useEffect, useState } from 'react';
+import FetchApi from './FetchApi';
 import './style.css';
+import TimeCounter from './TimeCounter';
 
 export default function App() {
   const [text, setText] = useState('偶數');
@@ -34,6 +36,8 @@ export default function App() {
       <button onClick={handleClick}>+1</button>
       {/* <p>{counter % 2 === 0 ? 'even' : 'odd'}</p> */}
       <p>{text}</p>
+      {/* <TimeCounter /> */}
+      <FetchApi />
     </div>
   );
 }
